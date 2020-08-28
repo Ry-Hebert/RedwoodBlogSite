@@ -1,0 +1,25 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{455:
+/*!************************************************!*\
+  !*** ./src/layouts/PostsLayout/PostsLayout.js ***!
+  \************************************************/
+/*! exports provided: default */
+/*! exports used: default */function(e,r,a){"use strict";var t=a(/*! react */1),n=a.n(t),l=a(/*! @redwoodjs/router */28),s=a(/*! @redwoodjs/web */82);r.a=function(e){return n.a.createElement("div",{className:"rw-scaffold"},n.a.createElement(s.Flash,{timeout:1e3}),n.a.createElement("header",{className:"rw-header"},n.a.createElement("h1",{className:"rw-heading rw-heading-primary"},n.a.createElement(l.Link,{to:l.routes.posts(),className:"rw-link"},"Posts")),n.a.createElement(l.Link,{to:l.routes.newPost(),className:"rw-button rw-button-green"},n.a.createElement("div",{className:"rw-button-icon"},"+")," New Post")),n.a.createElement("main",{className:"rw-main"},e.children))}},458:
+/*!*********************************************!*\
+  !*** ./src/components/PostForm/PostForm.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/*! exports used: default */function(e,r,a){"use strict";var t=a(/*! react */1),n=a.n(t),l=a(/*! @redwoodjs/forms */188);r.a=function(e){var r,a;return n.a.createElement("div",{className:"rw-form-wrapper"},n.a.createElement(l.Form,{onSubmit:function(r){var a;e.onSave(r,null==e||null===(a=e.post)||void 0===a?void 0:a.id)},error:e.error},n.a.createElement(l.FormError,{error:e.error,wrapperClassName:"rw-form-error-wrapper",titleClassName:"rw-form-error-title",listClassName:"rw-form-error-list"}),n.a.createElement(l.Label,{name:"title",className:"rw-label",errorClassName:"rw-label rw-label-error"},"Title"),n.a.createElement(l.TextField,{name:"title",defaultValue:null===(r=e.post)||void 0===r?void 0:r.title,className:"rw-input",errorClassName:"rw-input rw-input-error",validation:{required:!0}}),n.a.createElement(l.FieldError,{name:"title",className:"rw-field-error"}),n.a.createElement(l.Label,{name:"body",className:"rw-label",errorClassName:"rw-label rw-label-error"},"Body"),n.a.createElement(l.TextField,{name:"body",defaultValue:null===(a=e.post)||void 0===a?void 0:a.body,className:"rw-input",errorClassName:"rw-input rw-input-error",validation:{required:!0}}),n.a.createElement(l.FieldError,{name:"body",className:"rw-field-error"}),n.a.createElement("div",{className:"rw-button-group"},n.a.createElement(l.Submit,{disabled:e.loading,className:"rw-button rw-button-blue"},"Save"))))}},466:
+/*!**********************************************************!*\
+  !*** ./src/pages/NewPostPage/NewPostPage.js + 1 modules ***!
+  \**********************************************************/
+/*! exports provided: default */
+/*! all exports used */
+/*! ModuleConcatenation bailout: Cannot concat with ../node_modules/@babel/runtime-corejs3/helpers/slicedToArray.js (<- Module is not an ECMAScript module) */
+/*! ModuleConcatenation bailout: Cannot concat with ../node_modules/@babel/runtime-corejs3/helpers/taggedTemplateLiteral.js (<- Module is not an ECMAScript module) */
+/*! ModuleConcatenation bailout: Cannot concat with ../node_modules/@redwoodjs/router/dist/index.js (<- Module is not an ECMAScript module) */
+/*! ModuleConcatenation bailout: Cannot concat with ../node_modules/@redwoodjs/web/dist/index.js (<- Module is not an ECMAScript module) */
+/*! ModuleConcatenation bailout: Cannot concat with ./src/components/PostForm/PostForm.js */
+/*! ModuleConcatenation bailout: Cannot concat with ./src/layouts/PostsLayout/PostsLayout.js */
+/*! ModuleConcatenation bailout: Cannot concat with ../node_modules/graphql-tag/src/index.js (<- Module is not an ECMAScript module) */
+/*! ModuleConcatenation bailout: Cannot concat with ../node_modules/react/index.js (<- Module is not an ECMAScript module) */function(e,r,a){"use strict";a.r(r);var t=a(1),n=a.n(t),l=a(455),s=a(58),o=a.n(s),i=a(452),m=a.n(i),c=a(83),u=a.n(c),d=a(82),w=a(28),p=a(458);function E(){var e=m()(["\n  mutation CreatePostMutation($input: CreatePostInput!) {\n    createPost(input: $input) {\n      id\n    }\n  }\n"]);return E=function(){return e},e}var N=u()(E()),b=function(){var e=Object(d.useFlash)().addMessage,r=Object(d.useMutation)(N,{onCompleted:function(){Object(w.navigate)(w.routes.posts()),e("Post created.",{classes:"rw-flash-success"})}}),a=o()(r,2),t=a[0],l=a[1],s=l.loading,i=l.error;return n.a.createElement("div",{className:"rw-segment"},n.a.createElement("header",{className:"rw-segment-header"},n.a.createElement("h2",{className:"rw-heading rw-heading-secondary"},"New Post")),n.a.createElement("div",{className:"rw-segment-main"},n.a.createElement(p.a,{onSave:function(e){t({variables:{input:e}})},loading:s,error:i})))};r.default=function(){return n.a.createElement(l.a,null,n.a.createElement(b,null))}}}]);
+//# sourceMappingURL=6.d954cbcd.chunk.js.map
